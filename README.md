@@ -29,6 +29,9 @@ PA7     ------> SPI1_MOSI
 <br>PC2     ------> SPI2_MISO</br>
 PB13    ------> SPI2_SCK
 
+<br>|PA5| <---------------------------> |PB13|</br>
+|PA7| <----- |serial resistor| -----> |PC2|
+
 SPI1 Peripheral is configured in Master mode Half-Duplex Tx.
 SPI2 Peripheral is configured in Slave mode Half-Duplex Rx.
 
