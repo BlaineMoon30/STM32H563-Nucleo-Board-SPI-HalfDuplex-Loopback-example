@@ -41,8 +41,7 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
-uint32_t spi1_cnt = 0;
-uint32_t spi2_cnt = 0;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -220,8 +219,7 @@ void EXTI13_IRQHandler(void)
 void SPI1_IRQHandler(void)
 {
   /* USER CODE BEGIN SPI1_IRQn 0 */
-	//uint32_t itflag   = hspi->Instance->SR;
-	spi1_cnt++;
+
   /* USER CODE END SPI1_IRQn 0 */
   HAL_SPI_IRQHandler(&hspi1);
   /* USER CODE BEGIN SPI1_IRQn 1 */
@@ -235,8 +233,7 @@ void SPI1_IRQHandler(void)
 void SPI2_IRQHandler(void)
 {
   /* USER CODE BEGIN SPI2_IRQn 0 */
-	//aRxBuffer[ubReceiveIndex++] = (*((__IO uint8_t *)&SPI2->RXDR));
-	spi2_cnt++;
+
   /* USER CODE END SPI2_IRQn 0 */
   HAL_SPI_IRQHandler(&hspi2);
   /* USER CODE BEGIN SPI2_IRQn 1 */
